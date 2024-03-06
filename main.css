@@ -3059,7 +3059,7 @@ input, select, textarea {
 
 		.spotlight:before {
 			background-image: url("../images/overlay.png");
-			content: '';
+			/*content: '';*/
 			display: block;
 			height: 100%;
 			left: 0;
@@ -3427,7 +3427,8 @@ input, select, textarea {
 						display: inline-block;
 						height: inherit;
 						line-height: inherit;
-						outline: 0; 		
+						outline: 0; 	
+						text-shadow: black 1px 1px;	
 						
 					}
 
@@ -3460,7 +3461,7 @@ input, select, textarea {
 	body.landing #header {
 		background-color:transparent;
 		box-shadow: none;
-		position: absolute;
+		position: fixed;
 	}
 
 /* Banner */
@@ -4147,8 +4148,8 @@ li{
   }
   
 #logo{
-	font-family: Font;
-	
+	width: 15em;
+	position: fixed;
 }
 .iconsNav{
 	width: 1%;
@@ -4238,7 +4239,31 @@ li{
 	left: 12vw;
 }
 
-/* Section slide */
-#one:hover #one .img{
-	transform: translateX(-10%) ;
+/* Image Slider Formating */
+
+.image img{
+	position: absolute;
+	
+}
+.spotlight.bottom{
+    transition: transform 1s ease; /* Add a smooth transition effect */
+        
+}	
+
+.underImages{
+	right: 3%;
+	top: 150%;
+	position: absolute;
+}
+
+a{
+	border:0;
+}
+
+#one h2, #two h2, #three h2{
+		font-size: 3em;
+		padding-bottom: 0.7em;
+		margin-top: 5em;
+		text-align: center;
+		text-shadow: black 3px 3px 20px;
 }
